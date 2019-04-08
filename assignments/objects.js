@@ -10,6 +10,7 @@
 // 5,adaine5@samsung.com,Antonietta,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
+
 const example = {
   "id": 0,
   "name": "Example",
@@ -19,35 +20,36 @@ const example = {
 
 // Write your intern objects here:
 
-let mitzi = {
-  "id": 1,
-  "name": "Mitzi",
-  "email": "mmelloy0@psu.edu",
-  "gender": "F"
+
+const mitzi = {
+  'id': 1,
+  'name': 'Mitzi',
+  'email': 'mmelloy0@psu.edu',
+  'gender': 'F'
 }
 
-let kennan = {
+const kennan = {
   "id": 2,
   "name": "Kennan",
   "email": "kdiben1@tinypic.com",
   "gender": "M"
 }
 
-let keven = {
+const keven = {
   "id": 3,
   "name": "Keven",
   "email": "kmummery2@wikimedia.org",
   "gender": "M"
 }
 
-let gannie = {
+const gannie = {
   "id": 4,
   "name": "Gannie",
   "email": "gmartinson3@illinois.edu",
   "gender": "M"
 }
 
-let antonietta = {
+const antonietta = {
   "id": 5,
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
@@ -58,13 +60,13 @@ let antonietta = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(mitzi.name);
+console.log(mitzi.name)
 // Kennan's ID
-console.log(kennan.id);
+console.log(kennan[id]);
 // Keven's email
-console.log(keven.email)
+console.log(keven[2])
 // Gannie's name
-console.log(gannie.name);
+console.log(gannie.length -3 );
 // Antonietta's Gender
 console.log(antonietta.gender);
 
@@ -72,19 +74,28 @@ console.log(antonietta.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-//not my answer
-kennan.speak = function() {
-  return "Hello, my name is Kennan!";
-}
+
+// kennan.speak = function() {
+//   return "Hello, my name is Kennan!";
+// }
+
+kennan.speak = () => {
+  return "Hello, my name is Kennan!"
+};
+
 console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-//not my answer
-antonietta.multiplyNums = function(a,b) {
-  return a * b;
+const multiplyNums = function (num1,num2) {
+  return num1 * num2;
 }
+
+// antonietta.multiplyNums = function(a,b) {
+//   return a * b;
+// }
+
 console.log(antonietta.multiplyNums(3,4));
 
 
